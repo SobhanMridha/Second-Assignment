@@ -40,7 +40,8 @@ body {
 
 /* header section  */
 
-header {
+header,
+main {
   background-color: black;
 }
 
@@ -161,7 +162,6 @@ header {
   left: -35%;
 }
 
-
 .vdo-tutorial h3 {
   color: #fafaf9;
   font-size: 2em;
@@ -172,6 +172,45 @@ header {
   color: #efede8a6;
   font-size: 1em;
   font-weight: 400;
+}
+
+/* habit section  */
+
+.habit-container {
+  padding-bottom: 3em;
+}
+
+.habit-content {
+  text-align: center;
+}
+
+.habit-content p {
+  padding-top: 0.9em;
+  padding-bottom: 3em;
+}
+
+.workout {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+.box {
+  width: 231px;
+  text-align: center;
+}
+
+.box img {
+  border-radius: 50%;
+}
+
+
+.box h5 {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 600;
+  padding-top: 1.3em;
+  padding-bottom: 0.5em;
 }
 
 /* Responsive section  */
@@ -238,4 +277,23 @@ header {
     display: flex;
     justify-content: space-around;
   }
+
+  /* habbit section  */
+
+   .habit-content > h3 {
+    font-size: 2em;
+   } 
+
+   .habit-content > p {
+    margin: 0 5px;
+   }
+
+  .workout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+
 }
