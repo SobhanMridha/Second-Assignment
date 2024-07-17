@@ -123,8 +123,7 @@ header {
 }
 
 .free-video {
-  max-width: 193px;
-  max-height: 98px;
+  width: 193px;
   padding: 1em 1.5em;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -149,25 +148,19 @@ header {
 
 .vdo-tutorial {
   width: 206px;
-  height: 96px;
   padding: 1.2em 1.5em;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(48, 48, 48, 0.54);
   backdrop-filter: blur(10px);
   display: flex;
+  align-items: center;
   gap: 5px;
   position: absolute;
   bottom: 12%;
   left: -35%;
 }
 
-.circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #e6533c;
-}
 
 .vdo-tutorial h3 {
   color: #fafaf9;
@@ -219,11 +212,30 @@ header {
     width: 100%;
   }
 
+  .free-video {
+    width: 40%;
+    padding: 0.5em 1em;
+    top: 50px;
+    left: 200px;
+  }
+
+  .vdo-tutorial {
+    width: 50%;
+    padding: 0.5em 1em;
+    bottom: 200px;
+    left: 0;
+  }
+
   .btn {
     padding: 0.8em 1.5em;
   }
 
   .btn span {
     display: none;
+  }
+
+  .btn-box {
+    display: flex;
+    justify-content: space-around;
   }
 }
