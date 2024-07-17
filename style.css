@@ -28,9 +28,20 @@ body {
   color: #ffffff;
   font-size: 1.1em;
   font-weight: 600;
-  padding: 1em 2.5em;
+  padding: 0.8em 2.5em;
+  border: none;
   border-radius: 2.6em;
   background-color: #e6533c;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+/* header section  */
+
+header {
+  background-color: black;
 }
 
 /* nav bar section  */
@@ -39,7 +50,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -79,9 +89,97 @@ body {
 }
 
 .nav-container > img {
-    display: none;
+  display: none;
 }
 
+/* banner section  */
+
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+}
+
+.banner-content {
+  width: 40%;
+}
+
+.banner-content h1 {
+  color: #ffffff;
+  font-size: 4.9em;
+  font-weight: 900;
+}
+
+.banner-content p {
+  font-size: 1em;
+  padding: 1.7em 0;
+}
+
+/* banner section card making  */
+
+.banner-img {
+  position: relative;
+}
+
+.free-video {
+  max-width: 193px;
+  max-height: 98px;
+  padding: 1em 1.5em;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 23%;
+  right: -20%;
+}
+
+.free-video h3 {
+  color: #ffffff;
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.free-video p {
+  color: #ffffffa6;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.vdo-tutorial {
+  width: 206px;
+  height: 96px;
+  padding: 1.2em 1.5em;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  bottom: 12%;
+  left: -35%;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e6533c;
+}
+
+.vdo-tutorial h3 {
+  color: #fafaf9;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.vdo-tutorial p {
+  color: #efede8a6;
+  font-size: 1em;
+  font-weight: 400;
+}
 
 /* Responsive section  */
 
@@ -102,4 +200,30 @@ body {
     display: inline;
   }
 
+  /* banner section  */
+
+  .banner-container {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-content h1 {
+    font-size: 3em;
+  }
+
+  .banner-img img {
+    width: 100%;
+  }
+
+  .btn {
+    padding: 0.8em 1.5em;
+  }
+
+  .btn span {
+    display: none;
+  }
 }
