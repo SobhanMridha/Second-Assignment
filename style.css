@@ -100,6 +100,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 6em;
+  padding-bottom: 40px;
 }
 
 .banner-content {
@@ -192,7 +193,7 @@ main {
 .workout {
   display: flex;
   justify-content: center;
-  gap: 3em;
+  gap: 7em;
 }
 
 .box {
@@ -237,6 +238,46 @@ main {
 .run-content p {
   padding-top: 1em;
   padding-bottom: 2em;
+}
+
+/* training section  */
+
+.training-container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 300px;
+}
+
+.training-content p {
+  padding-top: 1em;
+  padding-bottom: 3em;
+}
+
+.train-img-container img {
+  height: 250px;
+  width: 100%;
+}
+
+.row-1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-container {
+  position: relative;
+  height: 250px;
+}
+
+.img-container p {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  color: #da280c;
 }
 
 /* Responsive section  */
@@ -317,12 +358,16 @@ main {
   .workout {
     flex-direction: column;
     align-items: center;
+    gap: 2em;
   }
+
+  /* running card section  */
 
   .run-container {
     flex-direction: column;
     width: 90%;
     gap: 30px;
+    padding: 30px;
   }
 
   .run-container > img {
@@ -339,6 +384,25 @@ main {
   }
 
   .run-btn button {
-    padding: 0.8em 30%;
+    padding: 0.8em 36%;
+  }
+
+  /* traing section  */
+
+  .training-container {
+    margin: 0 15px;
+  }
+
+  .row-1 {
+    display: none;
+  }
+
+  .row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .row-2 img {
+    border-radius: 16px;
+    padding-bottom: 5px;
   }
 }
