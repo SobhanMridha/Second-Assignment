@@ -280,6 +280,89 @@ main {
   color: #da280c;
 }
 
+/* BMI section  */
+
+.bmi-body {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 3em 0;
+  gap: 25em;
+}
+
+.bmi-header {
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.bmi-header h3 {
+  padding-bottom: 0.2em;
+  padding-right: 380px;
+}
+
+.bmi-body h4 {
+  color: #ffffff;
+  font-size: 1.7em;
+  font-weight: 900;
+  padding-bottom: 2em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: #ffffff;
+  border: 1px solid #ffffff1a;
+  padding: 1em;
+}
+
+td {
+  color: #ffffff80;
+  border: 1px solid #ffffff1a;
+  padding: 1em;
+}
+
+.bmi-calculator p {
+  width: 577px;
+  padding-top: 0.9em;
+  padding-bottom: 2em;
+}
+
+.bmi-calculator h4 {
+  padding: 0;
+}
+
+input,
+select {
+  color: #ffffff99;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 8px;
+  padding: 16px 46px 16px 26px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+select {
+  color: #a3a1a199;
+}
+
+.sex {
+  padding-right: 190px;
+}
+
+.factor {
+  padding-right: 333px;
+  margin-bottom: 2em;
+}
+
+.bmi-calculator > form > button {
+  padding: 1em 4em;
+}
+
 /* Responsive section  */
 
 @media screen and (max-width: 576px) {
@@ -405,4 +488,53 @@ main {
     border-radius: 16px;
     padding-bottom: 5px;
   }
+
+  /* Bmi section  */
+
+   .bmi-header {
+    margin: 15px;
+   }
+
+  .bmi-header h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+  }
+
+  .bmi-header p {
+    padding-top: 1em;
+  }
+
+  .bmi-body {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .bmi-calculator, .bmi-chart {
+    margin: 18px;
+  }
+
+  .bmi-calculator p {
+    width: 100%;
+  }
+
+  input, select {
+    padding: 1em 1em;
+    width: 45%;
+  }
+
+  .sex {
+    padding: 1em 1em;
+  }
+
+  .factor {
+    padding: 1em 1em;
+    width: 94%;
+  }
+
+ 
+
+  
+
+
 }
