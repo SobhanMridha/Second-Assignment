@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 * {
   margin: 0;
@@ -40,7 +41,10 @@ body {
 
 /* header section  */
 
-header,
+header {
+  background: linear-gradient(180deg, #111 100%, rgba(119, 119, 119, 0) 100%);
+}
+
 main {
   background-color: black;
 }
@@ -103,11 +107,20 @@ main {
   padding-bottom: 40px;
 }
 
+.banner-content > h1 > span {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: Miama;
+  line-height: 0%;
+}
+
 .banner-content {
   width: 40%;
 }
 
 .banner-content h1 {
+  width: 599px;
   color: #ffffff;
   font-size: 4.9em;
   font-weight: 900;
@@ -253,11 +266,6 @@ main {
   padding-bottom: 3em;
 }
 
-.train-img-container img {
-  height: 250px;
-  width: 100%;
-}
-
 .row-1 {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -268,17 +276,95 @@ main {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.img-container {
-  position: relative;
+.img-container-1,
+.img-container-2,
+.img-container-3,
+.img-container-4,
+.img-container-5,
+.img-container-6 {
   height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.img-container p {
-  position: absolute;
-  top: 85%;
-  left: 10%;
-  color: #da280c;
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.color-6 {
+  height: 250px;
+  width: 100%;
 }
+
+.color-1 p,
+.color-3 p,
+.color-5 p,
+.color-6 p {
+  position: relative;
+  top: 80%;
+  left: 5%;
+}
+
+.color-2 p {
+  position: relative;
+  top: 7%;
+  left: 5%;
+}
+
+.color-4 p {
+  position: relative;
+  top: 15%;
+  left: 70%;
+}
+
+.color-1 {
+  background-color: #06ffd280;
+}
+
+.color-2 {
+  background-color: #ff00004d;
+}
+
+.color-5 {
+  background-color: #42ff004d;
+}
+
+.color-6 {
+  background-color: #0047ff4d;
+}
+
+.img-container-1 {
+  background-image: url(images/exercise1.jpg);
+}
+
+.img-container-2 {
+  background-image: url(images/exercise2.png);
+}
+
+.img-container-3 {
+  background-image: url(images/exercise3.png);
+}
+
+.img-container-4 {
+  background-image: url(images/exercise4.png);
+}
+
+.img-container-5 {
+  background-image: url(images/exercise5.jpg);
+}
+
+.img-container-6 {
+  background-image: url(images/exercise6.jpg);
+}
+
+.train-img-container p {
+  color: #ffffff;
+  width: fit-content;
+}
+
 
 /* BMI section  */
 
@@ -319,6 +405,7 @@ th {
   color: #ffffff;
   border: 1px solid #ffffff1a;
   padding: 1em;
+  text-align: start;
 }
 
 td {
@@ -355,7 +442,7 @@ select {
 }
 
 .sex {
-  padding-right: 190px;
+  padding-right: 164px;
 }
 
 .factor {
@@ -513,12 +600,12 @@ footer {
 .hr {
   width: 60%;
   height: 1px;
-  border: 1px solid #FFFFFF1A;
+  border: 1px solid #ffffff1a;
   margin: auto;
 }
 
 footer p {
-  color: #FFFFFF80;
+  color: #ffffff80;
   text-align: center;
   padding: 1.5em 0;
 }
@@ -554,6 +641,7 @@ footer p {
   }
 
   .banner-content h1 {
+    width: 100%;
     font-size: 3em;
   }
 
@@ -636,17 +724,29 @@ footer p {
     margin: 0 15px;
   }
 
-  .row-1 {
+  .img-container-3, .img-container-6 {
     display: none;
   }
 
+  .row-1 {
+    grid-template-columns: 1fr 1fr;
+  } 
+
   .row-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.7fr 1fr;
   }
 
-  .row-2 img {
-    border-radius: 16px;
-    padding-bottom: 5px;
+  .img-container-2 {
+    background-position: 70%;
+  }
+
+  .img-container-4 {
+    background-position: 30%;
+  }
+
+  .color-4 p {
+    left: 5%;
+    top: 80%;
   }
 
   /* Bmi section  */
@@ -658,11 +758,13 @@ footer p {
   .bmi-header h3 {
     margin: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+    text-align: start;
   }
 
   .bmi-header p {
     padding-top: 1em;
+    text-align: start;
   }
 
   .bmi-body {
